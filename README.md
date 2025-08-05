@@ -3,6 +3,7 @@
 A modern, AI-assisted marketing analytics dashboard built using **React**, **Tailwind CSS**, and **Recharts** — built as part of the AI Vibe Coder challenge at ADmyBRAND.
 
 🔗 Live repo: [https://github.com/surabhi-chandrakant/ADmyBRAND-Dashboard](https://github.com/surabhi-chandrakant/ADmyBRAND-Dashboard)
+  Live Dashboard :  (https://a-dmy-brand-dashboard-one.vercel.app/)
 
 ---
 
