@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# ADmyBRAND Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, AI-assisted marketing analytics dashboard built using **React**, **Tailwind CSS**, and **Recharts** — built as part of the AI Vibe Coder challenge at ADmyBRAND.
 
-## Available Scripts
+🔗 Live repo: [https://github.com/surabhi-chandrakant/ADmyBRAND-Dashboard](https://github.com/surabhi-chandrakant/ADmyBRAND-Dashboard)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📊 Metric cards with real-time data and trend analysis
+- 🎨 Dark and Light theme support
+- 📅 Custom date range filtering
+- 🤖 AI Assistant chatbot (mock Gemini API responses)
+- 📈 Dynamic charts (Recharts)
+- 📤 Data export: XLSX, CSV, JSON
+- ⚙️ Toggleable dashboard metrics
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 AI Usage Report
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project simulates AI-powered insights using mock Gemini API responses. The AI assistant is integrated into the dashboard chat panel.
 
-### `npm run build`
+### Tools & AI Integrations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Functionality           | Tool / Tech Used           |
+|------------------------|----------------------------|
+| LLM Integration (Mock) | Gemini API (Simulated)     |
+| Chat State             | React State / useEffect    |
+| Mock Response Engine   | JS array with random picker|
+| Charting               | Recharts, Chart.js         |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Sample AI Prompts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These mock responses simulate insight generation:
 
-### `npm run eject`
+- `"Your campaign performance shows a 12% increase in conversions compared to last week."`
+- `"Consider increasing budget for the top performing campaigns."`
+- `"The seasonal campaign is performing exceptionally well with a ROAS of 3.2x."`
+- `"Your bounce rate has decreased by 5% since last month - great job!"`
+- `"I recommend focusing on mobile users as they show higher engagement rates."`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can connect it to real-time Gemini API by updating the `.env` file (optional).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ Project Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the repo
 
-## Learn More
+```bash
+git clone https://github.com/surabhi-chandrakant/ADmyBRAND-Dashboard.git
+cd ADmyBRAND-Dashboard
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+> If `axios` is missing, run: `npm install axios`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Start the development server
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Build for production
 
-### Making a Progressive Web App
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔐 Optional: Connect Gemini API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To connect to the **real Gemini API** (if credentials are available):
 
-### Deployment
+1. Create a `.env` file in the project root:
+```bash
+touch .env
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Add this line (no quotes around the key!):
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📁 Folder Structure
+
+```
+ADmyBRAND-Dashboard/
+├── public/
+├── src/
+│   ├── App.js           # Main dashboard component
+│   ├── components/      # UI Components (Sidebar, Cards, etc.)
+│   ├── styles/          # Tailwind + custom CSS
+├── .env                 # Gemini API key (optional)
+├── .gitignore
+├── package.json
+├── README.md
+```
+
+---
+
+## 💡 Scripts
+
+| Command          | Description                     |
+|------------------|---------------------------------|
+| `npm start`      | Run dev server (localhost:3000) |
+| `npm run build`  | Create optimized production build |
+| `npm test`       | Run tests (optional)            |
+
+---
+
+## 🧑‍💻 Author
+
+**Surabhi Bhor**  
+AI Vibe Coder Finalist  
+[GitHub](https://github.com/surabhi-chandrakant)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
